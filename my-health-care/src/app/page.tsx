@@ -37,7 +37,7 @@ export default function homePage() {
       </div>
       <div className="flex flex-col">
         <div className="flex flex-col container w-[48rem] h-[42.063rem] rounded-2xl opacity-100 bg-white overflow-hidden shrink-0 p-3">
-          <p className="card-title-24pt m-2 pb-6 font-extrabold text-left font-Manrope">
+          <p className="card-title-24pt m-2 pb-6 font-extrabold text-left">
             Diagnosis History
           </p>
           <div className="container bg-[#F4F0FE] rounded-xl w-[45.375rem] h-[18.625rem] opacity-100 pt-2">
@@ -60,9 +60,7 @@ export default function homePage() {
                   20 bpm
                 </p>
                 <div className="mt-3">
-                  <p className="font-Manrope body-regular-14 text-left pt-6 px-6">
-                    Normal
-                  </p>
+                  <p className="body-regular-14 text-left pt-6 px-6">Normal</p>
                 </div>
               </div>
             </div>
@@ -82,7 +80,7 @@ export default function homePage() {
                   98.6°F
                 </p>
                 <div className="mt-3">
-                  <p className="font-Manrope body-regular-14 text-left pt-6 pb-4 px-6">
+                  <p className="body-regular-14 text-left pt-6 pb-4 px-6">
                     Normal
                   </p>
                 </div>
@@ -111,7 +109,7 @@ export default function homePage() {
                     width={11}
                     height={6}
                   />
-                  <p className="body-regular-14 font-Manrope text-left pb-4 px-2">
+                  <p className="body-regular-14 text-left pb-4 px-2">
                     Lower than Average
                   </p>
                 </div>
@@ -120,7 +118,7 @@ export default function homePage() {
           </div>
         </div>
         <div className="flex flex-col container w-[48rem] h-[21.813rem] rounded-2xl opacity-100 bg-white overflow-hidden shrink-0 p-3 mt-6 mb-4">
-          <p className="card-title-24pt mx-2 mt-2 pb-4 font-extrabold text-left font-Manrope">
+          <p className="card-title-24pt mx-2 mt-2 pb-4 font-extrabold text-left">
             Diagnostic List
           </p>
           <div className="flex flex-col">

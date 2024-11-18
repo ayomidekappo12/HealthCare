@@ -61,7 +61,7 @@ export default function ProfilePage() {
         </div>
       </div>
       <div className="flex flex-col container w-[22.938rem] h-auto mt-6 mb-2 mx-4 py-4 px-3 bg-white opacity-100 rounded-2xl">
-        <p className="card-title-24pt mx-2 mt-1 pb-2 font-extrabold text-left font-Manrope">
+        <p className="card-title-24pt mx-2 mt-1 pb-2 font-extrabold text-left">
           Lab Results
         </p>
         <div className="flex flex-col">

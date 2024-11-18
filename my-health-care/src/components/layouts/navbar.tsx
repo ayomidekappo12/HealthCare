@@ -30,7 +30,7 @@ export default function navMenu() {
           />
         </div>
 
-        <div className="hidden md:flex  items-center gap-4 md:gap-8 body-emphasized-14pt bold justify-center">
+        <div className="hidden md:flex items-center gap-4 md:gap-8 body-emphasized-14pt justify-center">
           <NavItem
             src="/images/home_FILL0_wght300_GRAD0_opsz24.svg"
             text="Overview"
@@ -122,12 +122,8 @@ export default function navMenu() {
               loading="lazy"
             />
             <div className="flex flex-col">
-              <p className="font-Manrope body-emphasized-14pt bold">
-                Dr. Jose Simmons
-              </p>
-              <p className="font-Manrope body-secondary-info-14pt">
-                General Practitioner
-              </p>
+              <p className="body-emphasized-14pt bold">Dr. Jose Simmons</p>
+              <p className="body-secondary-info-14pt">General Practitioner</p>
             </div>
           </div>
           <div className="border-l border-gray-300 h-10"></div>
@@ -164,9 +160,9 @@ function NavItem({ src, text, href }: NavItemProps) {
     <div
       className={`${
         isActive
-          ? "bg-[#01F0D0] body-emphasized-14pt bold rounded-full cursor-pointer py-3 px-5"
+          ? "bg-[#01F0D0] body-emphasized-14pt rounded-full cursor-pointer py-3 px-5"
           : "body-emphasized-14pt bold"
-      } flex items-center gap-2 cursor-pointer body-emphasized-14pt bold`}
+      } flex items-center gap-2 cursor-pointer body-emphasized-14pt`}
       onClick={() => router.push(href)}
     >
       <Image
@@ -177,9 +173,7 @@ function NavItem({ src, text, href }: NavItemProps) {
         loading="lazy"
         className="bg-transparent shrink-0"
       />
-      <p className={`font-Manrope body-emphasized-14pt bold shrink-0`}>
-        {text}
-      </p>
+      <p className={`body-emphasized-14pt shrink-0`}>{text}</p>
     </div>
   );
 }
