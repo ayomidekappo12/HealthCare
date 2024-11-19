@@ -26,7 +26,7 @@ const Table: React.FC<TableProps> = ({ data }) => {
         </p>
       </div>
 
-      <div className="bg-white divide-y divide-gray-50">
+      <div className="bg-white divide-y divide-gray-50 overflow-y-visible overflow-x-hidden scrollbar-custom pr-2">
         {data.length > 0 ? (
           data.map((item) => (
             <div

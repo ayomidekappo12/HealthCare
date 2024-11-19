@@ -6,6 +6,8 @@ interface PatientCardProps {
   name: string;
   gender: string;
   age: number;
+  className?: string;
+  action?: () => void;
 }
 
 export default function PatientCard({
@@ -13,10 +15,15 @@ export default function PatientCard({
   name,
   gender,
   age,
+  className = "",
+  action,
 }: PatientCardProps) {
   return (
-    <div className="flex flex-row items-center justify-between mt-3">
-      <div className="flex flex-row items-center px-3 opacity-100 gap-4 mt-3">
+    <div
+      className={`flex flex-row items-center justify-between mt-3 py-2 pr-2 rounded-lg cursor-pointer ${className}`}
+      onClick={action}
+    >
+      <div className="flex flex-row items-center px-3 opacity-100 gap-4">
         <Image
           src={imageSrc}
           alt={`${name}'s profile`}
@@ -34,9 +41,9 @@ export default function PatientCard({
       </div>
       <IconButton
         imageSrc="/images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg"
-        className="-me-1"
+        className="bg-transparent -me-1"
         width={18}
-        height={4}
+        height={18}
       />
     </div>
   );

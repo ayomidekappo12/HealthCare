@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import IconButton from "@/components/IconButton";
 import PrimaryButton from "@/components/PrimaryButton";
+
 export default function ProfilePage() {
   const [loading, setLoading] = useState(false);
   const labResults = ["Blood Tests", "CT Scans", "Radiology Reports", "X-Rays"];
@@ -64,7 +65,7 @@ export default function ProfilePage() {
         <p className="card-title-24pt mx-2 mt-1 pb-2 font-extrabold text-left">
           Lab Results
         </p>
-        <div className="flex flex-col">
+        <div className="flex flex-col overflow-y-visible overflow-x-hidden scrollbar-custom pr-2">
           {labResults.map((result, index) => (
             <div
               key={index}
@@ -76,7 +77,7 @@ export default function ProfilePage() {
               <Image
                 src="/images/download_FILL0_wght300_GRAD0_opsz24 (1).svg"
                 alt="Arrow Down"
-                className="bg-transparent"
+                className="bg-transparent hover:cursor-pointer"
                 width={20}
                 height={20}
               />

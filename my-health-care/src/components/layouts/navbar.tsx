@@ -134,7 +134,7 @@ export default function navMenu() {
               width={19}
               height={20}
               loading="lazy"
-              className="bg-transparent shrink-0"
+              className="bg-transparent hover:cursor-pointer shrink-0"
             />
             <Image
               src="/images/more_vert_FILL0_wght300_GRAD0_opsz24.svg"
@@ -142,7 +142,7 @@ export default function navMenu() {
               width={4}
               height={18}
               loading="lazy"
-              className="bg-transparent shrink-0"
+              className="bg-transparent hover:cursor-pointer shrink-0"
             />
           </div>
         </div>
