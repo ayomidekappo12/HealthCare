@@ -32,14 +32,26 @@
     --unnamed-font-style-normal: normal;
     --unnamed-font-weight-800: 800px;
     --unnamed-font-weight-normal: normal;
+    --unnamed-font-weight-medium: medium;
     --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-extrabold: extrabold;
+    --unnamed-font-size-12: 12px;
+    --unnamed-font-size-13: 13px;
     --unnamed-font-size-14: 14px;
+    --unnamed-font-size-16: 16px;
     --unnamed-font-size-18: 18px;
+    --unnamed-font-size-22: 22px;
     --unnamed-font-size-24: 24px;
+    --unnamed-font-size-30: 30px;
     --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-17: 17px;
+    --unnamed-line-spacing-18: 18px;
     --unnamed-line-spacing-19: 19px;
+    --unnamed-line-spacing-22: 22px;
     --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-30: 30px;
     --unnamed-line-spacing-33: 33px;
+    --unnamed-line-spacing-41: 41px;
     --unnamed-text-transform-titlecase: titlecase;
   }
 
@@ -91,6 +103,84 @@
     color: var(--unnamed-color-072635);
   }
 
+  .Manrope-regular-12 {
+    font-family: var(--unnamed-font-family-manrope);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-12);
+    line-height: var(--unnamed-line-spacing-17);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+  }
+
+  .Manrope-regular-13 {
+    font-family: var(--unnamed-font-family-manrope);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-13);
+    line-height: var(--unnamed-line-spacing-18);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-transform: var(--unnamed-text-transform-titlecase);
+  }
+
+  .Manrope-regular-14 {
+    font-family: var(--unnamed-font-family-manrope);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-19);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-transform: var(--unnamed-text-transform-titlecase);
+  }
+
+  .Manrope-medium-14 {
+    font-family: var(--unnamed-font-family-manrope);
+    text-transform: var(--unnamed-text-transform-titlecase);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-19);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+  }
+
+  .Manrope-medium-16 {
+    font-family: var(--unnamed-font-family-manrope);
+    text-transform: var(--unnamed-text-transform-titlecase);
+    font-weight: var(--unnamed-font-weight-medium);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-22);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+  }
+
+  .Manrope-bold-14 {
+    font-family: var(--unnamed-font-family-manrope);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-14);
+    line-height: var(--unnamed-line-spacing-19);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-transform: var(--unnamed-text-transform-titlecase);
+  }
+
+  .Manrope-bold-22 {
+    font-family: var(--unnamed-font-family-manrope);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-22);
+    line-height: var(--unnamed-line-spacing-30);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+    text-transform: var(--unnamed-text-transform-titlecase);
+  }
+
+  .Manrope-extrabold-30 {
+    font-family: var(--unnamed-font-family-manrope);
+    font-weight: var(--unnamed-font-weight-extrabold);
+    font-size: var(--unnamed-font-size-30);
+    line-height: var(--unnamed-line-spacing-41);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-072635);
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -133,11 +223,5 @@
     font-size: calc(
       100vw / 1600 * 16
     ); /* Scale font size to match design width */
-  }
-
-  @media (min-width: 1600px) and (min-height: 700px) {
-    .custom-height {
-      padding: 2rem;
-    }
   }
 }

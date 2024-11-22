@@ -32,12 +32,12 @@ const sampleData = [
 export default function homePage() {
   return (
     <main className="min-h-screen justify-between gap-0 mt-6 mb-4 flex flex-row overflow-hidden">
-      <div className="flex">
+      <div className="hidden lg:flex">
         <SideBar />
       </div>
-      <div className="flex flex-col">
-        <div className="flex flex-col container w-[48rem] h-[42.063rem] rounded-2xl opacity-100 bg-white overflow-hidden shrink-0 p-3">
-          <p className="card-title-24pt m-2 pb-6 font-extrabold text-left">
+      <div className="w-full mx-auto shrink-0 md:flex flex-col md:w-fit">
+        <div className="w-full h-fit mx-auto flex flex-col container lg:w-[48rem] lg:h-[42.063rem] rounded-2xl opacity-100 bg-white overflow-hidden shrink-0 p-3">
+          <p className="card-title-24pt m-2 pb-6 text-left">
             Diagnosis History
           </p>
           <div className="container bg-[#F4F0FE] rounded-xl w-[45.375rem] h-[18.625rem] opacity-100 pt-2">
@@ -53,14 +53,12 @@ export default function homePage() {
                   height={96}
                   className="p-5 opacity-100"
                 />
-                <p className="font-Manrope font-medium text-[#072635] text-base text-left px-6">
+                <p className="Manrope-medium-16 text-left px-6">
                   Respiratory Rate
                 </p>
-                <p className="font-Manrope font-extrabold text-[#072635] text-2xl text-left px-6">
-                  20 bpm
-                </p>
+                <p className="Manrope-extrabold-30 px-6">20 bpm</p>
                 <div className="mt-3">
-                  <p className="body-regular-14 text-left pt-6 px-6">Normal</p>
+                  <p className="body-regular-14 text-left pb-4 px-6">Normal</p>
                 </div>
               </div>
             </div>
@@ -73,16 +71,10 @@ export default function homePage() {
                   height={96}
                   className="p-5 opacity-100"
                 />
-                <p className="font-Manrope font-medium text-[#072635] text-base text-left px-6">
-                  Temperature
-                </p>
-                <p className="font-Manrope font-extrabold text-[#072635] text-2xl text-left px-6">
-                  98.6°F
-                </p>
+                <p className="Manrope-medium-16 text-left px-6">Temperature</p>
+                <p className="Manrope-extrabold-30 text-left px-6">98.6°F</p>
                 <div className="mt-3">
-                  <p className="body-regular-14 text-left pt-6 pb-4 px-6">
-                    Normal
-                  </p>
+                  <p className="body-regular-14 text-left pb-4 px-6">Normal</p>
                 </div>
               </div>
             </div>
@@ -95,12 +87,8 @@ export default function homePage() {
                   height={96}
                   className="p-5 opacity-100"
                 />
-                <p className="font-Manrope font-medium text-[#072635] text-base text-left px-6">
-                  Heart Rate
-                </p>
-                <p className="font-Manrope font-extrabold text-[#072635] text-2xl text-left px-6">
-                  78 bpm
-                </p>
+                <p className="Manrope-medium-16 text-left px-6">Heart Rate</p>
+                <p className="Manrope-extrabold-30 text-left px-6">78 bpm</p>
                 <div className="flex mt-3 px-6">
                   <Image
                     src="/images/ArrowDown.svg"
@@ -117,8 +105,8 @@ export default function homePage() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col container w-[48rem] h-[21.813rem] rounded-2xl opacity-100 bg-white overflow-hidden shrink-0 p-3 mt-6 mb-4">
-          <p className="card-title-24pt mx-2 mt-2 pb-4 font-extrabold text-left">
+        <div className="w-full mx-auto md:flex flex-col container md:w-[48rem] h-[21.813rem] rounded-2xl opacity-100 bg-white overflow-hidden shrink-0 p-3 mt-6 mb-4">
+          <p className="card-title-24pt mx-2 mt-2 pb-4 text-left">
             Diagnostic List
           </p>
           <div className="flex flex-col">
@@ -126,7 +114,7 @@ export default function homePage() {
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="hidden lg:flex">
         <Profile />
       </div>
     </main>
