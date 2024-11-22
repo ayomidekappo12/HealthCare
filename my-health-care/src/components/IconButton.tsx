@@ -53,12 +53,8 @@ const IconButton = ({
           />
         )}
         <div className="flex flex-col">
-          <p className="font-Manrope text-sm font-medium text-[#072635] text-left">
-            {value}
-          </p>
-          <p className="font-Manrope text-base font-semibold text-[#072635] text-left">
-            {text}
-          </p>
+          <p className="Manrope-medium-14 text-left">{value}</p>
+          <p className="Manrope-bold-14 text-left">{text}</p>
         </div>
       </Button>
     </div>

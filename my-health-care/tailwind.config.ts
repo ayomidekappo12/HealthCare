@@ -20,7 +20,7 @@ const config = {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
-        custom: "1600px", // Add a custom screen size for 1600px width
+        custom: "1600px",
       },
     },
     extend: {

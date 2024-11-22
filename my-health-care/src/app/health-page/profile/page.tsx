@@ -19,9 +19,7 @@ export default function ProfilePage() {
             className="rounded-full"
             loading="lazy"
           />
-          <h1 className="card-title-24pt font-extrabold text-center">
-            Jessica Taylor
-          </h1>
+          <h1 className="card-title-24pt text-center">Jessica Taylor</h1>
         </div>
         <div className="flex flex-col items-start space-y-3 px-3 opacity-100">
           <IconButton
@@ -62,18 +60,14 @@ export default function ProfilePage() {
         </div>
       </div>
       <div className="flex flex-col container w-[22.938rem] h-auto mt-6 mb-2 mx-4 py-4 px-3 bg-white opacity-100 rounded-2xl">
-        <p className="card-title-24pt mx-2 mt-1 pb-2 font-extrabold text-left">
-          Lab Results
-        </p>
+        <p className="card-title-24pt mx-2 mt-1 pb-2 text-left">Lab Results</p>
         <div className="flex flex-col overflow-y-visible overflow-x-hidden scrollbar-custom pr-2">
           {labResults.map((result, index) => (
             <div
               key={index}
               className="flex flex-row w-[19.688rem] h-[2.5rem] justify-between items-center gap-8 mx-2 px-3 my-1 hover:bg-[#F6F7F8]"
             >
-              <p className="text-left font-Manrope font-medium text-[#072635] text-base">
-                {result}
-              </p>
+              <p className="text-left Manrope-regular-14">{result}</p>
               <Image
                 src="/images/download_FILL0_wght300_GRAD0_opsz24 (1).svg"
                 alt="Arrow Down"

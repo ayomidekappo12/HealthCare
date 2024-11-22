@@ -122,7 +122,7 @@ export default function navMenu() {
               loading="lazy"
             />
             <div className="flex flex-col">
-              <p className="body-emphasized-14pt bold">Dr. Jose Simmons</p>
+              <p className="body-emphasized-14pt">Dr. Jose Simmons</p>
               <p className="body-secondary-info-14pt">General Practitioner</p>
             </div>
           </div>
@@ -161,7 +161,7 @@ function NavItem({ src, text, href }: NavItemProps) {
       className={`${
         isActive
           ? "bg-[#01F0D0] body-emphasized-14pt rounded-full cursor-pointer py-3 px-5"
-          : "body-emphasized-14pt bold"
+          : "body-emphasized-14pt"
       } flex items-center gap-2 cursor-pointer body-emphasized-14pt`}
       onClick={() => router.push(href)}
     >
